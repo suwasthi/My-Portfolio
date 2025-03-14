@@ -7,7 +7,7 @@ const Header = () => {
     <div className= 'Header'>
         <img src={my_img}  className="round-image"/>
         <h1><span>I'm Suwasthiga Nagendramoorthy</span></h1>
-        <p>A passionate Full-Stack Developer and Embedded Systems Enthusiast. Explore my work to see how I blend software and hardware to create impactful digital solutions!</p>
+        <p>I'm an undergraduate Computer Science and Engineering student at the University of Moratuwa, passionate about technology, problem-solving, and innovation.</p>
          <div className="Header-action">
             <div className="Header-connect">Connect with me</div>
             <div className="Header-resume">My resume</div>
