@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Header from './Components/Header/Header';
 import About from './Components/About/About';
 import Achievements from './Components/Achievements/Achievements';
+import Myprojects from './Components/MyProjects/Myprojects';
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
       <Header/>
       <About/>
       <Achievements/>
+      <Myprojects/>
     </div>
   )
 }

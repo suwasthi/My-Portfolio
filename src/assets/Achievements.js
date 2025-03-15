@@ -1,4 +1,4 @@
-import vembadi from '../assets/vembadi.png';
+// import vembadi from '../assets/vembadi.png';
 import hackelite from '../assets/hackelite.jpg';
 
 
@@ -6,7 +6,7 @@ const Achievements_data = [
     {
         a_name: "G.C.E A/L EXAMINATION Result",
         a_desc: "Successfully completed the G.C.E Advanced Level Examination with outstanding results at  J/Vembadi Girls' High School.",
-        img_src: vembadi,
+        // img_src: vembadi,
         details: [
             { Category: "Stream", Value: "Physical Science Stream" },
             { Category: "Z-Score", Value: "2.5340" },

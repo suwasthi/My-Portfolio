@@ -14,10 +14,10 @@ const Achievements = () => {
         <div className="achievements-container">
             {Achievements_data.map((achievements,index)=>{
                 return <div key={index} className='achievements-format'>
-                    <img src={achievements.img_src} alt={achievements.a_name} className="achievements-image"/>
                     <h3>{achievements.a_name}</h3>
                     <p>{achievements.a_desc}</p>
-                    {/* <img src={achievements.img_src}/> */}
+                    <img src={achievements.img_src} className="achievements-image"/>
+
                     <ul className="achievements-details">
                         {achievements.details.map((detail, i) => (
                             <li key={i}>
@@ -25,9 +25,11 @@ const Achievements = () => {
                             </li>
                     ))}
                     </ul>
-
                     </div>
             })}
+        </div>
+        <div className="showmore">
+            <p>Show More</p>
         </div>
     </div>
   )
