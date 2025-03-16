@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import About from './Components/About/About';
 import Achievements from './Components/Achievements/Achievements';
 import Myprojects from './Components/MyProjects/Myprojects';
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
       <About/>
       <Achievements/>
       <Myprojects/>
+      <Contact/>
     </div>
   )
 }
