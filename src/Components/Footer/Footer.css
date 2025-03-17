@@ -1,0 +1,38 @@
+.footer-container {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    color: #DF8908;
+    font-size: 39px;
+    transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .github-icon:hover { color: #B415FF; }
+  .linkedin-icon:hover { color: #B415FF; }
+  .facebook-icon:hover { color: #B415FF; }
+  .instagram-icon:hover { color: #B415FF; }
+  
+  .copyright {
+    font-size: 19px;
+    opacity: 0.7;
+  }
+  

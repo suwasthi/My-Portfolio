@@ -6,7 +6,7 @@ import Achievements_data from '../../assets/Achievements'
 
 const Achievements = () => {
   return (
-    <div className='achievements'>
+    <div id='Achievements' className='achievements'>
         <div className="achievements-title">
             <h1>My Achievements</h1>
             <img src={icon}/>

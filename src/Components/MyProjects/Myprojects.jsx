@@ -6,7 +6,7 @@ import myprojects_data from '../../assets/myprojects'
 
 const MyProjects = () => {
   return (
-    <div className="myprojects-container">
+    <div id='MyProject' className="myprojects-container">
       <div className="myproject-title">
           <h2>My Projects</h2>
           <img src={icon} />

@@ -5,7 +5,7 @@ import icon from '../../assets/icon.png'
 
 const About = () => {
   return (
-    <div className='About'>
+    <div id='About' className='About'>
         <div className="about-title">
             <h1>About me</h1>
             <img src={icon}/>

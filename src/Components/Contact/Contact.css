@@ -24,6 +24,7 @@
 .contact-section{
     display: flex;
     gap: 150px;
+    
 }
 
 .contact-left{
@@ -111,4 +112,8 @@
 .contact-submit:hover{
      transform: scale(1.1);
      transition: 0.3s;
+}
+
+.contact-detail:hover .icon {
+    color: #B415FF;  /* Change to blue on hover */
 }

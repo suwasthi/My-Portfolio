@@ -5,6 +5,7 @@ import About from './Components/About/About';
 import Achievements from './Components/Achievements/Achievements';
 import Myprojects from './Components/MyProjects/Myprojects';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
       <Achievements/>
       <Myprojects/>
       <Contact/>
+      <Footer/>
     </div>
   )
 }
