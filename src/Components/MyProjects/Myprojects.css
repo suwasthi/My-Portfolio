@@ -17,7 +17,7 @@
 
 .myproject-title img{
     position: absolute;
-    bottom: -90px;
+    bottom: -40px;
     right: 2;
     z-index: -1;
 }
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: start;
     gap: 20px;
-    padding: 60px;
+    padding: 20px;
     transform: 0.4s;
     cursor: pointer;
 }
@@ -37,7 +37,7 @@
 }
 
 .project-content{
-    padding: 60px;
+    padding: 20px;
     display: grid;
     gap: 40px;
     margin-bottom: 40px;
@@ -63,15 +63,21 @@
 .project-content p{
     margin-left: 10px;
     color: #d4d4d4;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
+}
+
+.project-media{
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    gap: 40px;  /* Space between GitHub icon and image */
 }
 
 .github-icon{
     color: #DF8908;
     width: 40px;
     height: 40px;
-  }
+}
 .project-card:hover{
     border: 2px solid #ff00ff;
     transform: scale(1.05);

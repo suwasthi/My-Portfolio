@@ -16,7 +16,7 @@
 
 .contact-title img{
     position: absolute;
-    bottom: -90px;
+    bottom: -40px;
     right: 2;
     z-index: -1;
 }
@@ -117,3 +117,10 @@
 .contact-detail:hover .icon {
     color: #B415FF;  /* Change to blue on hover */
 }
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  

@@ -6,16 +6,16 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="social-icons">
-        <a href="https://github.com/suwasthi" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/suwasthi" rel="noopener noreferrer">
           <FaGithub className="icon github-icon" />
         </a>
-        <a href="https://www.linkedin.com/in/suwasthiga-nagendramoorthy-2269b72a4/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/suwasthiga-nagendramoorthy-2269b72a4/" rel="noopener noreferrer">
           <FaLinkedin className="icon linkedin-icon" />
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100085836886265" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/profile.php?id=100085836886265" rel="noopener noreferrer">
           <FaFacebook className="icon facebook-icon" />
         </a>
-        <a href="https://www.instagram.com/suwasthisuwaa?igsh=MWk3dTc2YWd6MXFpMg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/suwasthisuwaa?igsh=MWk3dTc2YWd6MXFpMg%3D%3D&utm_source=qr" rel="noopener noreferrer">
           <FaInstagram className="icon instagram-icon" />
         </a>
       </div>
