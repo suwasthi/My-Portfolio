@@ -14,13 +14,6 @@
     font-size: 60px;
 } 
 
-.contact-title img{
-    position: absolute;
-    bottom: -40px;
-    right: 2;
-    z-index: -1;
-}
-
 .contact-section{
     display: flex;
     gap: 150px;
@@ -122,5 +115,58 @@
     color: red;
     font-size: 14px;
     margin-top: 5px;
-  }
+}
+
+@media(max-width:768px){
+    .Contact{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .contact-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-left h1{
+        font-size: 50px;
+    }
+
+    .contact-left p{
+        font-size: 16px;
+    }
+
+    .contact-detail{
+        gap: 20px;
+    }
+
+    .contact-detail img{
+        width: 25px;
+    }
+
+    .contact-right label{
+        font-size: 16px;
+    }
+
+    .contact-right input{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .contact-right textarea{
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .contact-submit{
+        font-size: 16px;
+        padding: 15px 40px;
+    }
+}
   

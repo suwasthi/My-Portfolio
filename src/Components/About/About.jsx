@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./About.css";
-import icon from "../../assets/icon.png";
 
 const skills = [
   { name: "Python", percentage: 80 },
@@ -65,7 +64,6 @@ const About = () => {
     <div id="About" className="About" ref={aboutRef}>
       <div className="about-title">
         <h1>About me</h1>
-        <img src={icon} alt="icon" />
         <p>I'm passionate about building innovative digital solutions. With a strong interest in full-stack web development, embedded systems, and AI, I love exploring the intersection of software and hardware.</p>
         <p>                                                                                                                                                    </p>
         <p>I enjoy working on projects that blend creativity with functionality, whether it’s developing responsive web applications, designing IoT systems, or diving into computer vision and robotics. My goal is to continuously learn, innovate, and contribute to impactful tech solutions.</p>

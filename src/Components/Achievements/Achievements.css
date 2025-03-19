@@ -15,12 +15,6 @@
     font-size: 60px;
 }
 
-.achievements-title img{
-    position: absolute;
-    bottom: -40px;
-    right: 1;
-    z-index: -1;
-}
 
 .achievements-format{
     display: flex;
@@ -99,4 +93,34 @@
     gap: 30px;
     transform: scale(1.05);
     transition: 0.5s;
+}
+
+@media(max-width:768px){
+    .achievements {
+        margin: 40px 5%;
+    }
+    .achievements-title h1 {
+        font-size: 40px;
+    }
+    .achievements-format {
+        padding: 25px;
+    }
+    .achievements-format h3 {
+        font-size: 18px;
+    }
+    .achievements-format p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .achievements-details{
+        font-size: 16px;
+    }
+    .showmore {
+        padding: 18px 35px;
+        font-size: 14px; /* Adjusts the overall button text size */
+    }
+    .showmore p {
+        font-size: 16px; /* Explicitly defining the paragraph font size */
+    }
 }

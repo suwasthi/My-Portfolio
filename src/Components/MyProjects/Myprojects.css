@@ -1,4 +1,5 @@
-.myprojects-container{
+/* My Projects Container */
+.myprojects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,51 +7,60 @@
     margin: 80px 170px;
 }
 
-.myproject-title{
+/* Title Section */
+.myproject-title {
     position: relative;
 }
 
-.myproject-title h2{
+.myproject-title h2 {
     padding: 0px 30px;
     font-size: 60px;
 }
 
-.myproject-title img{
-    position: absolute;
-    bottom: -40px;
-    right: 2;
-    z-index: -1;
-}
-.projects-list{
+/* Projects List */
+.projects-list {
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 20px;
     padding: 20px;
-    transform: 0.4s;
+    transition: 0.4s;
     cursor: pointer;
 }
 
-.project-card{
+/* Individual Project Card */
+.project-card {
     border: 2px solid white;
     border-radius: 10px;
+    transition: 0.4s;
 }
 
-.project-content{
+.project-card:hover {
+    border: 2px solid #ff00ff;
+    transform: scale(1.05);
+}
+
+/* Project Content */
+.project-content {
     padding: 20px;
     display: grid;
     gap: 40px;
     margin-bottom: 40px;
-   
 }
 
-.project-content img{
+/* Project Image */
+.project-content img {
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
-.project-content h3{
+/* Project Title */
+.project-content h3 {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 28px;
@@ -60,50 +70,83 @@
     -webkit-text-fill-color: transparent;
 }
 
-.project-content p{
+/* Project Description */
+.project-content p {
     margin-left: 10px;
     color: #d4d4d4;
     font-size: 22px;
     line-height: 40px;
 }
 
-.project-media{
+/* Project Media (GitHub + Image) */
+.project-media {
     display: flex;
-    align-items: center;  /* Align items vertically */
-    gap: 40px;  /* Space between GitHub icon and image */
+    align-items: center; /* Align items vertically */
+    gap: 40px; /* Space between GitHub icon and image */
 }
 
-.github-icon{
+/* GitHub Icon */
+.github-icon {
     color: #DF8908;
     width: 40px;
     height: 40px;
 }
-.project-card:hover{
-    border: 2px solid #ff00ff;
-    transform: scale(1.05);
-    transition: 0.4s;
-}
 
-.project-showmore{
+/* Show More Button */
+.project-showmore {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     margin: 0 auto 80px auto;
     border-radius: 50px;
     border: 2px solid #ffffff;
     padding: 30px 60px;
-    margin-bottom: 80px;
     cursor: pointer;
-}
-
-.project-showmore p{
-    align-items: center;
     font-size: 22px;
     font-weight: 500;
-
 }
-.project-showmore:hover{
+
+.project-showmore:hover {
     gap: 30px;
     transform: scale(1.05);
     transition: 0.5s;
+}
+
+@media(max-width:768px){
+    .myprojects-container{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .myprojects-container h2{
+        padding: 0;
+        font-size: 40px;
+        
+    }
+
+    .project-content h3{
+        font-size: 20px;
+    }
+
+    .project-content p{
+        font-size: 16px;
+    }
+    
+
+    .project-media {
+        align-items: start; /* Center the items */
+        gap: 100px; /* Reduce spacing */
+    }
+
+    .project-content img {
+        max-width: 300px; /* Adjust image size for small screens */
+    }
+
+    .project-showmore {
+        padding: 18px 35px;
+        font-size: 16px; /* Adjusts the overall button text size */
+    }
+
 }

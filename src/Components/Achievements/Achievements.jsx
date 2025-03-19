@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react';
 import './Achievements.css';
-import icon from '../../assets/icon.png';
 import Achievements_data from '../../assets/Achievements';
 
 const Achievements = () => {
@@ -24,7 +23,6 @@ const Achievements = () => {
     <div id='Achievements' className='achievements' ref={achievementsRef}>
         <div className="achievements-title">
             <h1>My Achievements</h1>
-            <img src={icon} alt="Icon" />
         </div>
         <div className="achievements-container">
             {Achievements_data.slice(0, visibleCount).map((achievement, index) => (

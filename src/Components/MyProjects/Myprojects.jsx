@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './Myprojects.css';
 import { FaGithub } from 'react-icons/fa';
-import icon from '../../assets/icon.png';
 import myprojects_data from '../../assets/myprojects';
 
 const MyProjects = () => {
@@ -25,7 +24,6 @@ const MyProjects = () => {
     <div id='MyProject' className="myprojects-container" ref={projectsRef}>
       <div className="myproject-title">
           <h2>My Projects</h2>
-          <img src={icon} alt="Icon" />
       </div>
       <div className="projects-list">
         {myprojects_data.slice(0, visibleCount).map((project, index) => (

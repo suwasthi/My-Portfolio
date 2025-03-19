@@ -2,48 +2,72 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin: 30px 170px;
+    margin: 30px 10%; /* Use percentages for better responsiveness */
 }
 
 .about-title {
     position: relative;
     padding: 0px 30px;
+    margin-bottom: 20px;
     font-size: 30px;
-    gap: 20px;
 }
 
 
-.about-title img {
-    position: relative;
-    bottom: 45px;
-    right: 2;
-    z-index: -1;
-}
-
-
-.about-title p{
+.about-title p {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
     line-height: 40px;
     font-size: 22px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .about-skills {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    column-gap: 25px;
-    row-gap: 60px; /* Space between items */
-    justify-content: center; /* Center items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns dynamically */
+    gap: 25px;
+    justify-content: center;
     align-items: center;
 }
 
-
-
-.progressbar-container{
-    width: 180px;
-    height: 180px;
+.progressbar-container {
+    width: 100%; /* Make width responsive */
+    max-width: 180px; /* Prevent it from getting too big */
+    height: auto; /* Allow flexibility */
     font-weight: 600;
     color: white;
-    padding: 1px 35px;
+    padding: 1px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align text */
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .About {
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .about-title h1{
+        font-size: 50px; /* Decrease font size for readability */
+    
+    }
+
+    .about-title p{
+        font-size: 16px;
+        line-height: 30px;
+        
+    }
+
+
+    .about-skills {
+        grid-template-columns: repeat(2, 1fr); /* Switch to two columns */
+    }
+
+    .progressbar-container .CircularProgressbar-text {
+        font-size: 12px !important; /* Adjust the font size */
+      }
+}
+
+

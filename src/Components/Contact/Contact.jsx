@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Contact.css'
-import icon from '../../assets/icon.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -59,7 +58,6 @@ const Contact = () => {
     <div id='Contact' className='Contact'> 
           <div className="contact-title">
             <h1>Get in touch</h1>
-            <img src={icon}/>
           </div>
           <div className="contact-section">
             <div className="contact-left">
