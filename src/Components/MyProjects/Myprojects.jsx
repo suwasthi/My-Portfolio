@@ -23,7 +23,7 @@ const MyProjects = () => {
   return (
     <div id='MyProject' className="myprojects-container" ref={projectsRef}>
       <div className="myproject-title">
-          <h2>My Projects</h2>
+          <h2>My Works</h2>
       </div>
       <div className="projects-list">
         {myprojects_data.slice(0, visibleCount).map((project, index) => (

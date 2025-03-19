@@ -25,7 +25,7 @@ const Navbar = () => {
             <li><AnchorLink className='anchor-link' href='#home'><p className={menu === "home" ? "active" : ""} onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#About'><p className={menu === "About" ? "active" : ""} onClick={() => setMenu("About")}>About</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#Achievements'><p className={menu === "Achievements" ? "active" : ""} onClick={() => setMenu("Achievements")}>Achievements</p></AnchorLink></li>
-            <li><AnchorLink className='anchor-link' offset={50} href='#MyProject'><p className={menu === "MyProject" ? "active" : ""} onClick={() => setMenu("MyProject")}>Projects</p></AnchorLink></li>
+            <li><AnchorLink className='anchor-link' offset={50} href='#MyProject'><p className={menu === "MyProject" ? "active" : ""} onClick={() => setMenu("MyProject")}>Works</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#Contact'><p className={menu === "Contact" ? "active" : ""} onClick={() => setMenu("Contact")}>Contact</p></AnchorLink></li>
 
         </ul>
