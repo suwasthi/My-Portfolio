@@ -15,4 +15,4 @@ Welcome to my personal portfolio repository! This website showcases my skills, p
 ## 🛠️ Technologies Used  
 - **Frontend:** React, HTML, CSS  
 - **UI Libraries:** React Circular Progressbar, React Anchor Link Smooth Scroll  
-- **Hosting:** GitHub Pages / Vercel / Netlify 
+
