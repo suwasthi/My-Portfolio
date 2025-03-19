@@ -1,6 +1,7 @@
 .About {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
     gap: 80px;
     margin: 30px 10%; /* Use percentages for better responsiveness */
 }
@@ -42,7 +43,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .About {
         gap: 50px;
         margin: 50px 70px;
@@ -52,6 +53,10 @@
     .about-title h1{
         font-size: 50px; /* Decrease font size for readability */
     
+    }
+
+    .progressbar-container {
+        max-width: 120px; /* Shrinks skills on smaller screens */
     }
 
     .about-title p{
