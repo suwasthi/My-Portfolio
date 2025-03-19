@@ -3,7 +3,7 @@
 Welcome to my personal portfolio repository! This website showcases my skills, projects, and experiences as a **Computer Science and Engineering** student at the **University of Moratuwa**.  
 
 ## 🔗 Live Demo  
-[Visit My Portfolio](your-live-link-here)  
+[Visit My Portfolio](https://suwasthi.github.io/My-Portfolio/)
 
 ## 📌 Features  
 ✅ Fully responsive design  
