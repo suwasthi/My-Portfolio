@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 88px;
-    margin: 80px 170px;
+    margin: 80px 10%; /* Use percentages for better responsiveness */
 }
 
 /* Title Section */
@@ -15,6 +15,7 @@
 .myproject-title h2 {
     padding: 0px 30px;
     font-size: 60px;
+    text-align: center; /* Center the title */
 }
 
 /* Projects List */
@@ -35,6 +36,7 @@
     transition: 0.4s;
 }
 
+/* Hover Effect for Project Card */
 .project-card:hover {
     border: 2px solid #ff00ff;
     transform: scale(1.05);
@@ -52,8 +54,8 @@
 .project-content img {
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 100%;
-    max-width: 400px;
+    width: 100%; /* Make image responsive */
+    max-width: 400px; /* Set a max width */
     height: auto;
     border-radius: 10px;
     object-fit: contain;
@@ -86,7 +88,7 @@
 }
 
 /* GitHub Icon */
-.github-icon {
+.github-icon1 {
     color: #DF8908;
     width: 40px;
     height: 40px;
@@ -113,40 +115,44 @@
     transition: 0.5s;
 }
 
-@media(max-width:768px){
-    .myprojects-container{
-        gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .myprojects-container {
+        margin: 40px 5%; /* Adjust margins for smaller screens */
     }
 
-    .myprojects-container h2{
-        padding: 0;
-        font-size: 40px;
-        
+    .myproject-title h2 {
+        font-size: 40px; /* Smaller font size for heading */
     }
 
-    .project-content h3{
-        font-size: 20px;
+    .projects-list {
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 
-    .project-content p{
-        font-size: 16px;
+    .project-card {
+        padding: 15px; /* Reduce padding for project cards */
     }
-    
+
+    .project-content {
+        gap: 20px; /* Reduce gap for project content */
+    }
+
+    .project-content h3 {
+        font-size: 24px; /* Smaller font size for project titles */
+    }
+
+    .project-content p {
+        font-size: 18px; /* Smaller font size for project descriptions */
+        line-height: 28px; /* Adjust line height for readability */
+    }
+
 
     .project-media {
-        align-items: start; /* Center the items */
-        gap: 100px; /* Reduce spacing */
-    }
-
-    .project-content img {
-        max-width: 300px; /* Adjust image size for small screens */
+        gap: 20px; /* Reduce gap between GitHub icon and image */
     }
 
     .project-showmore {
-        padding: 18px 35px;
-        font-size: 16px; /* Adjusts the overall button text size */
+        padding: 20px 40px; /* Reduce padding for show more button */
+        font-size: 18px; /* Smaller font size for button */
     }
-
 }

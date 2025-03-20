@@ -16,12 +16,13 @@ const Navbar = () => {
     menuRef.current.style.right="-350px";
   }
 
+  
   return (
     <div className="navbar">
       <img src={logo} className='nav-logo'/>
-      <FaBars className='nav-mob-open' onClick={openMenu}/>
+      <FaBars className='nav-mob-open' onClick={openMenu}  size="30px"/>
         <ul ref={menuRef} className="nav-menu">
-            <FaTimes className='nav-mob-close' onClick={closeMenu}/>
+            <FaTimes className='nav-mob-close'   size="30px" onClick={closeMenu}/>
             <li><AnchorLink className='anchor-link' href='#home'><p className={menu === "home" ? "active" : ""} onClick={() => setMenu("home")}>Home</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#About'><p className={menu === "About" ? "active" : ""} onClick={() => setMenu("About")}>About</p></AnchorLink></li>
             <li><AnchorLink className='anchor-link' offset={50} href='#Achievements'><p className={menu === "Achievements" ? "active" : ""} onClick={() => setMenu("Achievements")}>Achievements</p></AnchorLink></li>

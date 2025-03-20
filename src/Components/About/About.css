@@ -1,9 +1,9 @@
 .About {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
     gap: 80px;
-    margin: 30px 10%; /* Use percentages for better responsiveness */
+    margin: 80px 10%; /* Use percentages for better responsiveness */
+    /* Adjusted margin for smaller screens */
 }
 
 .about-title {
@@ -13,6 +13,10 @@
     font-size: 30px;
 }
 
+.about-title h1 {
+    font-size: 36px; /* Adjusted font size for heading */
+    text-align: center; /* Center the title */
+}
 
 .about-title p {
     display: flex;
@@ -20,9 +24,10 @@
     padding-top: 20px;
     line-height: 40px;
     font-size: 22px;
-    /* margin-bottom: 10px; */
+    text-align: center; /* Center align text for better readability */
 }
 
+/* Skills Section */
 .about-skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns dynamically */
@@ -31,6 +36,7 @@
     align-items: center;
 }
 
+/* Progress Bar Container */
 .progressbar-container {
     width: 100%; /* Make width responsive */
     max-width: 180px; /* Prevent it from getting too big */
@@ -41,38 +47,31 @@
     text-align: center; /* Center align text */
 }
 
-
-
+/* 📱 Responsive Design */
 @media (max-width: 768px) {
     .About {
-        gap: 50px;
-        margin: 50px 70px;
-        align-items: start;
+        margin: 40px 5%; /* Adjust margins for smaller screens */
+        gap: 40px; /* Reduce gap between sections */
     }
 
-    .about-title h1{
-        font-size: 50px; /* Decrease font size for readability */
-    
+    .about-title {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+
+    .about-title h1 {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+
+    .about-title p {
+        font-size: 18px; /* Smaller font size for paragraphs */
+        line-height: 28px; /* Adjust line height for readability */
+    }
+
+    .about-skills {
+        gap: 20px; /* Reduce gap between skill items */
     }
 
     .progressbar-container {
-        max-width: 120px; /* Shrinks skills on smaller screens */
+        max-width: 150px; /* Smaller max width for progress bars */
     }
-
-    .about-title p{
-        font-size: 16px;
-        line-height: 30px;
-        
-    }
-
-
-    .about-skills {
-        grid-template-columns: repeat(2, 1fr); /* Switch to two columns */
-    }
-
-    .progressbar-container .CircularProgressbar-text {
-        font-size: 12px !important; /* Adjust the font size */
-      }
 }
-
-

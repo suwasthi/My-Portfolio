@@ -6,6 +6,7 @@
 }
 
 .nav-logo {
+    margin-top: 10px;
     width: 60px; 
     height: 60px;  
 }
@@ -80,6 +81,7 @@
         display: block;
         position: fixed;
         right: 30px;
+        cursor: pointer;
     }
     .nav-mob-close{
         display: block;

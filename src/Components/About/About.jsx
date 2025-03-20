@@ -64,7 +64,7 @@ const About = () => {
     <div id="About" className="About" ref={aboutRef}>
       <div className="about-title">
         <h1>About me</h1>
-        <p>I'm passionate about building innovative digital solutions. With a strong interest in full-stack web development, embedded systems, and AI, I love exploring the intersection of software and hardware.</p>
+        <p>I'm passionate about building innovative digital solutions. With a strong interest in full-stack web development, embedded systems, and AI. I love exploring the intersection of software and hardware.</p>
         <p>                                                                                                                                                    </p>
         <p>I enjoy working on projects that blend creativity with functionality, whether it’s developing responsive web applications, designing IoT systems, or diving into computer vision and robotics. My goal is to continuously learn, innovate, and contribute to impactful tech solutions.</p>
       </div>

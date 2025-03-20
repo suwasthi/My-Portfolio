@@ -31,11 +31,12 @@ const MyProjects = () => {
             <div className="project-content">
               <h3 className="project-name">{project.p_name}</h3>
               <p className="project-desc">{project.p_desc}</p>
+              <a href={project.p_link} rel="noopener noreferrer" className="github-link">
+                  <FaGithub className="github-icon1" />
+              </a>
               <div className="project-media"> {/* New container */}
                 <img src={project.p_img} alt={project.p_name} className="project-image" />
-                <a href={project.p_link} rel="noopener noreferrer" className="github-link">
-                  <FaGithub className="github-icon" />
-                </a>
+                
               </div>
             </div>
 
