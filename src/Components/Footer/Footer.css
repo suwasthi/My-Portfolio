@@ -36,7 +36,7 @@
   opacity: 0.7;
 }
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
   .footer-container {
       margin: 30px 20px;
       padding: 40px 0;
@@ -55,4 +55,4 @@
       font-size: 16px; /* Smaller font for mobile screens */
       opacity: 0.8;
   }
-}
+} */
