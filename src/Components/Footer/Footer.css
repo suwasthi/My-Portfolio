@@ -36,23 +36,4 @@
   opacity: 0.7;
 }
 
-/* @media(max-width:768px) {
-  .footer-container {
-      margin: 30px 20px;
-      padding: 40px 0;
-  }
-
-  .social-icons {
-      gap: 15px;
-      margin-bottom: 15px;
-  }
-
-  .icon {
-      font-size: 40px; /* Reduce icon size for smaller screens */
-  }
-
-  .copyright {
-      font-size: 16px; /* Smaller font for mobile screens */
-      opacity: 0.8;
-  }
-} */
+n
